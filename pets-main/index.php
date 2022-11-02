@@ -33,17 +33,33 @@
 	<section class="adopcion1">
 		<img src="images/dog1.jpg">
 		<section class="cardog">
-			<h3>Furulais</h3>
+			<h3>Firulais</h3>
 			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
 			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
 			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
 			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-       <button> Más información</button>
+			<section class="btn1-center"> 
+         <button> Más información</button>
+         </section>
 		</section>
 	</section>
-	<section class="adopcion2"><h3>Noticia 2</h3></section>
+	<section class="adopcion2">
+		<img src="images/dog2.jpg">
+		<section class="cardog">
+			<h3>Firulais</h3>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      <section class="btn2-center">    
+       <button> Más información</button>
+       </section>
+		</section>
+	</section>
 	<section class="doctor">
 		<h3>Doctores</h3>
 	</section>
