@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -26,7 +25,14 @@
 	</header>
 	<section class="sliderPrincipal">
 		<img src="images/slider1.jpg">
+		<section class="frase">
+			<h3>Proyecto de adopcion de mascotas</h3>
+			<section class="btn-center">
+				<button>Adoptanos</button>
+			</section>
+		</section>
 	</section>
+
 	<section class="titulo">
 	<h2>Adopción</h2>
 	</section>
@@ -60,11 +66,62 @@
        </section>
 		</section>
 	</section>
-	<section class="doctor">
-		<h3>Doctores</h3>
+		
+		<section class="doctor1">
+			<section class="images">
+			<img src="images/doctor1.jpg">
+			
+			<section class="doc">
+		<h3>Dr. Luis Jaramillo</h3>
+		</section>
+		<section class="descripcion">
+		<p>Especialista en alimentación canina</p>	
+	</section>
+	</section>
+	</section>
+	<section class="doctor2">
+			<section class="images">
+			<img src="images/doctor2.jpg">
+
+			<section class="doc">
+		<h3>Dr. Luis Jaramillo</h3>
+		</section>
+		<section class="descripcion">
+		<p>Especialista en alimentación canina</p>	
+	</section>
+	</section>
+	</section>
+	<section class="doctor3">
+			<section class="images">
+			<img src="images/doctor3.jpg">
+			
+			<section class="doc">
+		<h3>Dr. Luis Jaramillo</h3>
+		</section>
+		<section class="descripcion">
+		<p>Especialista en alimentación canina</p>	
+	</section>
+	</section>
+	</section>
+	<section class="doctor4">
+			<section class="images">
+			<img src="images/doctor4.jpg">
+			
+			<section class="doc">
+		<h3>Dr. Luis Jaramillo</h3>
+		</section>
+		<section class="descripcion">
+		<p>Especialista en alimentación canina</p>	
+	</section>
+	</section>
 	</section>
 	<section class="sponsor">
-		<h3>Sponsor</h3>
+		<section class="logo">
+		<img src="images/logotipoPet.png">
+		</section>
+		<section class="escudo">
+		<img src="images/escudo.png">
+		</section>
 	</section>
 	<footer class="piePagina">
 		<section class="derechos">

@@ -5,36 +5,38 @@
 body{
 	background: rgba(215, 211, 211, 0.3);
 	font-family: 'Poppins', sans-serif;
+
 }
+
 .contenedor{
 	width: 90%;
-	max-width: 1524px;
 	margin: 0 auto;
-
+	max-width: 1524px;
+	
 	display: grid;
-	grid-gap: 0px;
-	grid-template-columns: repeat(2, 1fr);
+    grid-gap: 0px;
+	grid-template-columns: repeat(4, 1fr);
 	grid-template-rows: repeat(7, auto);
 
-	grid-template-areas: "header  header"
-						 "slider slider"
-						 "titulo titulo"
-						 "adopta1 adopta2"
-						 "doctor doctor"	
-						 "sponsor sponsor"
-						 "footer footer";	
+	grid-template-areas: "header  header header  header"
+						 "slider slider slider slider"
+						 "titulo titulo titulo titulo"
+						 "adopta1 adopta1 adopta2 adopta2"
+						 "doctor1 doctor2 doctor3 doctor4"	
+						 "sponsor sponsor sponsor sponsor"
+						 "footer footer footer footer";	
 }
 /*  --------------------------------------------  */
 /*                    header                      */
 /*  --------------------------------------------  */
-.contenedor .cabeceraPrincipal{
+.contenedor .cabeceraPrincipal{	
 	grid-area: header;
 	background-color: #B5EF8A;
 	display: flex;
 	justify-content: space-between;
 }
 .contenedor .cabeceraPrincipal .logotipo{
-	padding: 10px 40px;
+	padding: 15px 40px;
 }
 .contenedor .cabeceraPrincipal nav{
 	display: flex;
@@ -55,11 +57,41 @@ body{
 .contenedor .sliderPrincipal{
 	grid-area: slider;
 	background-color: #333;
+	position: relative;
+	display: inline-block;
 }
 .contenedor .sliderPrincipal img{
 	width: 100%;
 }
+.contenedor .sliderPrincipal .frase  {
+	position: absolute;
+    background-color: #fff;
+    padding: 0px 450px;
+    left: 50%;
+    top: 80%;
+    transform: translate(-50%, -50%);
+    border-radius:10px;
+    opacity: 0.5;
+    text-align: center;
+}
+.contenedor .sliderPrincipal .frase button {
+	text-align: center;
+    border-radius: 10px;
+    background: #B5EF8A;
+	padding: 15px 20px;
+	color: #65524D;
+	margin: 20px 10px;
+	border: 5px;
+	text-decoration: none;
+	}
+	.contenedor .sliderPrincipal .frase button:hover {
+	background-color: #5B8C21;
+	color: #fff;
+	}
 
+/*  --------------------------------------------  */
+/*                    Titulo                      */
+/*  --------------------------------------------  */
 .contenedor .titulo{
 	grid-area: titulo;
 	background-color: #fff;
@@ -71,7 +103,9 @@ body{
 	font-weight: 300;
 	padding: 30px 0;
 }
-
+/*  --------------------------------------------  */
+/*                    Adopciones                     */
+/*  --------------------------------------------  */
 .contenedor .adopcion1{
 	grid-area: adopta1;
 	background-color: #fff;
@@ -104,6 +138,23 @@ body{
 .btn1-center{
     text-align: right;
 	}
+
+.contenedor .adopcion2{
+	grid-area: adopta2;
+	background-color: #fff;
+	display: flex;
+	justify-content: space-between;
+}
+.contenedor .adopcion2 .cardog h3{
+	font-size: 25px;
+	color: #817E9F;
+	text-transform: uppercase;
+	padding: 5px 10px;
+}
+.contenedor .adopcion2 .cardog p{
+	padding: 5px 10px;
+	color: #605B5B;
+}
 .contenedor .adopcion2 .cardog button{
 	border-radius: 10px;
 	border: 2px;
@@ -121,29 +172,200 @@ body{
 .btn2-center{
     text-align: right;
 	}
-.contenedor .adopcion2{
-	grid-area: adopta2;
+/*  --------------------------------------------  */
+/*                    doctores                    */
+/*  --------------------------------------------  */
+.contenedor .doctor1{
+	grid-area: doctor1;
 	background-color: #fff;
-	display: flex;
-	justify-content: space-between;
+	text-align: center;
+	padding: 0px 20px;
+
 }
-.contenedor .adopcion2 .cardog h3{
-	font-size: 25px;
-	color: #817E9F;
-	text-transform: uppercase;
-	padding: 5px 10px;
+.contenedor .doctor1 .images{
+	position: relative;
+	display: inline-block;
+	text-align: center;
+	padding: 20px 0px;
+
 }
-.contenedor .adopcion2 .cardog p{
-	padding: 5px 10px;
+.contenedor .doctor1 .images .doc{
+	position: absolute;
+	top: 220px;
+	left: 0%;
+	color: #000000;
+	text-align: left;
+    padding: 0px 10px;
+
+}
+
+.contenedor .doctor1 .images .descripcion{
 	color: #605B5B;
+	position: absolute;
+	top: 250px;
+	left: 0%;
+    text-align: left;
+    padding: 0px 10px;
+
+	}
+.contenedor .doctor1 .doc {
+	background-color: #fff;
+    transform: translate(0px, 0px);  
+    opacity: 0.6;
+    
 }
-.contenedor .doctor{
-	grid-area: doctor;
-	background-color: #333;
+.contenedor .doctor1 .descripcion {
+	background-color: #fff;
+    transform: translate(0px, 0px);  
+    opacity: 0.6;
+    
 }
+
+/*  ---------------------Doctor2---------------  */
+.contenedor .doctor2{
+	grid-area: doctor2;
+	background-color: #fff;
+	text-align: center;
+	padding: 0px 20px;
+}
+.contenedor .doctor2 .images{
+	position: relative;
+	display: inline-block;
+	text-align: center;
+	padding: 20px 0px;
+}
+.contenedor .doctor2 .images .doc{
+	position: absolute;
+	top: 220px;
+	left: 0%;
+	color: #000000;
+	text-align: left;
+    padding: 0 10px;
+}
+
+.contenedor .doctor2 .images .descripcion{
+	color: #605B5B;
+	position: absolute;
+	top: 250px;
+	left: 0%;
+    text-align: left;
+    padding: 0 10px;
+	}
+.contenedor .doctor2 .doc {
+	background-color: #fff;
+    transform: translate(0px, 0px);  
+    opacity: 0.6;
+    
+}
+.contenedor .doctor2 .descripcion {
+	background-color: #fff;
+    transform: translate(0px, 0px);  
+    opacity: 0.6;
+    
+}
+	/*  ---------------------Doctor3---------------  */
+.contenedor .doctor3{
+	grid-area: doctor3;
+	background-color: #fff;
+	text-align: center;
+	padding: 0px 20px;
+}
+.contenedor .doctor3 .images{
+	position: relative;
+	display: inline-block;
+	text-align: center;
+	padding: 20px 0px;
+}
+.contenedor .doctor3 .images .doc{
+	position: absolute;
+	top: 220px;
+	left: 0%;
+	color: #000000;
+	text-align: left;
+    padding: 0 10px;
+}
+
+.contenedor .doctor3 .images .descripcion{
+	color: #605B5B;
+	position: absolute;
+	top: 250px;
+	left: 0%;
+    text-align: left;
+    padding: 0 10px;
+	}
+.contenedor .doctor3 .doc {
+	background-color: #fff;
+    transform: translate(0px, 0px);  
+    opacity: 0.6;
+    
+}
+.contenedor .doctor3 .descripcion {
+	background-color: #fff;
+    transform: translate(0px, 0px);  
+    opacity: 0.6;
+    
+}
+	/*  ---------------------Doctor4---------------  */
+.contenedor .doctor4{
+	grid-area: doctor4;
+	background-color: #fff;
+	text-align: center;
+	padding: 0px 20px;
+}
+.contenedor .doctor4 .images{
+	position: relative;
+	display: inline-block;
+	text-align: center;
+	padding: 20px 0px;
+}
+.contenedor .doctor4 .images .doc{
+	position: absolute;
+	top: 220px;
+	left: 0%;
+	color: #000000;
+	text-align: left;
+    padding: 0 10px;
+}
+
+.contenedor .doctor4 .images .descripcion{
+	color: #605B5B;
+	position: absolute;
+	top: 250px;
+	left: 0%;
+    text-align: left;
+    padding: 0 10px;
+	}
+.contenedor .doctor4 .doc {
+	background-color: #fff;
+    transform: translate(0px, 0px);  
+    opacity: 0.6;
+    
+}
+.contenedor .doctor4 .descripcion {
+	background-color: #fff;
+    transform: translate(0px, 0px);  
+    opacity: 0.6;
+    
+}
+
+/*  --------------------------------------------  */
+/*                    sponsor                      */
+/*  --------------------------------------------  */
 .contenedor .sponsor{
 	grid-area: sponsor;
 	background-color: #333;
+	display: flex;
+	justify-content: space-between;	
+
+}
+.contenedor .sponsor .logo{
+	display: block;
+	margin: auto;
+}
+.contenedor .sponsor .escudo{
+	display: block;
+	margin: auto;
+	padding: 10px 30px;
 }
 /*  --------------------------------------------  */
 /*                    footer                      */
