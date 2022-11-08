@@ -1,6 +1,7 @@
 *{
 	padding: 0;
 	margin: 0;
+	border: 0;
 }
 body{
 	background: rgba(215, 211, 211, 0.3);
@@ -34,6 +35,7 @@ body{
 	background-color: #B5EF8A;
 	display: flex;
 	justify-content: space-between;
+
 }
 .contenedor .cabeceraPrincipal .logotipo{
 	padding: 15px 40px;
@@ -56,6 +58,7 @@ body{
 /*  --------------------------------------------  */
 .contenedor .sliderPrincipal{
 	grid-area: slider;
+	display: flex;
 	background-color: #333;
 	position: relative;
 	display: inline-block;
@@ -83,10 +86,12 @@ body{
 	margin: 20px 10px;
 	border: 5px;
 	text-decoration: none;
+	 cursor: pointer;
 	}
 	.contenedor .sliderPrincipal .frase button:hover {
 	background-color: #5B8C21;
 	color: #fff;
+
 	}
 
 /*  --------------------------------------------  */
@@ -111,6 +116,7 @@ body{
 	background-color: #fff;
 	display: flex;
 	justify-content: space-between;
+	padding: 0px 20px;
 }
 .contenedor .adopcion1 .cardog h3{
 	font-size: 25px;
@@ -130,6 +136,7 @@ body{
 	color: #65524D;
 	margin: 20px 10px;
 	border: 2px;
+	cursor: pointer;
 	}
 .contenedor .adopcion1 .cardog button:hover{
     background-color: #5B8C21;
@@ -144,6 +151,7 @@ body{
 	background-color: #fff;
 	display: flex;
 	justify-content: space-between;
+	padding: 0px 20px;
 }
 .contenedor .adopcion2 .cardog h3{
 	font-size: 25px;
@@ -164,6 +172,7 @@ body{
     padding: 5px 20px;
 	color: #65524D;
     margin: 20px 10px;
+    cursor: pointer;
 	}
 .contenedor .adopcion2 .cardog button:hover{
     background-color: #5B8C21;
@@ -393,4 +402,66 @@ body{
 }
 .contenedor .piePagina .redesSociales a:hover{
 	color: #fff;
+}
+/*  --------------------------------------------  */
+/*              Contenido Main                    */
+/*  --------------------------------------------  */
+main{
+	grid-area: slider;
+	margin: 0 auto;
+	width: 90%;
+	padding: 2em 0;
+}
+main h2{
+	color: #817E9F;
+	font-size: 2em;
+}
+main p{
+	color: #605050;
+	font-size: 1em;
+	line-height: 20px;
+}
+
+/*  --------------------------------------------  */
+/*              Formulario                    */
+/*  --------------------------------------------  */
+.grupoInput{
+	padding: 10px;
+}
+.grupoInput label{
+	display: block;
+}
+.grupoInput input[type=text], input[type=email], input[type=number], input[type=text], input[type=date]{
+width: 90%;
+padding: 15px;
+border-radius: 5;
+}
+.boton{
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: 0.3s;
+
+}
+button:hover{
+	background-color: #3C8F40;
+
+}
+.btn-center{
+    text-align: center;
+}
+
+/*  --------------------------------------------  */
+/*              Personalizado                    */
+/*  --------------------------------------------  */
+.alerta{
+	color: #FF0000;
 }

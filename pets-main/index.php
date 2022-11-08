@@ -19,7 +19,7 @@
 			<a href="#">Inicio</a>
 			<a href="#">Servicios</a>
 			<a href="#">Productos</a>
-			<a href="#">Adopción</a>
+			<a href="internas/adopcion.php">Adopción</a>
 			<a href="#">Contactos</a>
 		</nav>
 	</header>
